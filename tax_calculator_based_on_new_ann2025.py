@@ -40,8 +40,8 @@ def calculate_tax(income, nps_percentage=0, basic_salary_percentage=50):
 
 # Example usage
 income = float(input("Enter your annual income (in ₹): "))
-nps_percentage = float(input("Enter NPS investment percentage of Basic Salary (in %): "))
-basic_salary_percentage = 50  # Basic salary is 50% of total income
+nps_percentage = float(input("Enter NPS investment (in %): "))
+basic_salary_percentage = float(input("Enter Basic Salary percentage (in %): "))
 
 tax, nps_investment, taxable_income = calculate_tax(income, nps_percentage, basic_salary_percentage)
 
